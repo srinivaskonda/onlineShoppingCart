@@ -13,9 +13,35 @@ public class onlineShoppingCart {
 		public int getTotalProducts() {
 			return products.size();
 		}
-		public String getTotal() {
-			// TODO Auto-generated method stub
-			return null;
-		}
+		public double getTotal() {
+			
+		double total = 0;	
 
+		int i = 0;
+		
+		// loop through the products 
+		for (i = 0; i < products.size(); i++) {
+
+			// if the product is 'apple' 		     
+			if (products.get(i).equals("apple")) {
+ 
+				//increment totalApplesBilled;
+				totalApplesBilled += 1;
+			}
+
+			if (products.get(i).equals("orange")) {
+                
+				//increment totalOrangesBilled;
+				totalOrangesBilled += 1;
+			}
+
+		
+		
+
+		
+		
+		
+}
+		return total;
+}
 }
